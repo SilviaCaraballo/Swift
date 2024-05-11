@@ -1,2 +1,2 @@
-#<center><font size="30">Swift</font></center>
+# <span style="font-size:larger;">Swift</span>
 Contiene mis proyectos de aprendizaje de Swift
