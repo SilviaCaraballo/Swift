@@ -1,6 +1,6 @@
-#Swift
+# Swift
 
-##Presentación
+## Presentación
 
 Hola me llamo Silvia y tengo 25 años de experiencia en la informatica.
 Principalemente como soporte técnico en entorno servidor, de Windows 2000.
