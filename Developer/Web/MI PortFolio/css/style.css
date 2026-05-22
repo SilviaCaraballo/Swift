@@ -16,6 +16,42 @@ body {
     font-size: 16px;
 }
 
+/* ── Foto de perfil / cabecera ── */
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.profile-text {
+    flex: 1;
+}
+
+.profile-image {
+    flex-shrink: 0;
+}
+
+.profile-photo {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}
+
+@media (max-width: 992px) {
+    .profile-header {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-photo {
+        width: 160px;
+        height: 160px;
+    }
+}
+
 /* ── Sección genérica ── */
 section {
     background-color: var(--bg-card);
