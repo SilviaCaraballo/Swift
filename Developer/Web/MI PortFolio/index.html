@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>FreeLance iOS Developer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/w3.css">
+  <link rel="stylesheet" href="css/css.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Sidebar / menú lateral -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding"
+     style="z-index:3;width:300px;font-weight:bold;"
+     id="mySidebar"
+     aria-label="Menú de navegación principal">
+  <a href="javascript:void(0)" onclick="w3_close()"
+     class="w3-button w3-hide-large w3-display-topleft"
+     style="width:100%;font-size:22px">Cerrar Menú</a>
+  <div class="w3-container">
+    <div class="w3-bar-block">
+      <a href="#"          onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Inicio</a>
+      <a href="#showcase"  onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Quien Soy</a>
+      <a href="#services"  onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Mi Trayectoria Profesional</a>
+      <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Proyectos</a>
+      <a href="#packages"  onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Recomendaciones</a>
+      <a href="#contact"   onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contacto</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Menú superior en pantallas pequeñas -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <button class="w3-button w3-red w3-margin-right"
+          onclick="w3_open()"
+          aria-label="Abrir menú"
+          aria-controls="mySidebar"
+          aria-expanded="false">&#9776;</button>
+  <span>FreeLance iOS Developer</span>
+</header>
+
+<!-- Overlay al abrir el sidebar en pantallas pequeñas -->
+<div class="w3-overlay w3-hide-large"
+     onclick="w3_close()"
+     style="cursor:pointer"
+     title="Cerrar menú"
+     id="myOverlay"
+     aria-hidden="true"></div>
+
+<!-- CONTENIDO PRINCIPAL -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Inicio / Quien Soy -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <div class="profile-header">
+      <div class="profile-text">
+        <h1 class="w3-jumbo"><b>Bienvenido a mi Site</b></h1>
+        <h1 class="w3-xxxlarge w3-text-red"><b>Quien Soy:</b></h1>
+        <hr style="width:300px;border:5px solid red" class="w3-round">
+        <p>Me llamo <b>Silvia</b> y soy desarrolladora en entornos <b>Apple</b> desde hace mas de tres años.</p>
+        <p>Durante algo mas de 20 años, me he dedicado al desarrollo de software, y diseño web entre otras tecnologías, por lo que me considero una apasionada de la programación de apps, así como otras tecnologías relacionadas, entre ellas actualmente la <b>Inteligencia Artificial</b>.</p>
+      </div>
+      <div class="profile-image">
+        <img src="img/portfolio.png" alt="Foto de perfil de Silvia Caraballo, desarrolladora iOS" class="profile-photo">
+      </div>
+    </div>
+  </div>
+
+  <!-- Mi Trayectoria Profesional -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Mi Trayectoria Profesional</b></h1>
+    <hr style="width:350px;border:5px solid red" class="w3-round">
+    <p>🍎 Desde 2022, desarrollo aplicaciones para la plataforma <b>Apple</b> usando <b>Swift</b> y el entorno de desarrollo <b>Xcode</b>.</p>
+    <p>Me especializo en crear apps basadas en <b>SwiftUI</b> y <b>MVVM</b> (Model View ViewModel), implementar pruebas unitarias a través de <b>TDD</b> y accesibilidad en mis proyectos.</p>
+    <p>También manejo bibliotecas como: <b>Swift Package Manager</b>, <b>Git</b> y <b>GitHub</b> para el control de versiones.</p>
+    <p>Manejo la gran mayoría de las herramientas de <b>IA</b> que hay en la actualidad: <b>ChatGPT</b>, <b>Claude</b> y <b>Gemini</b>, entre otras muchas, en las que me mantengo actualizada a la última para no perderme nada 😅</p>
+    <p>Gestiono los componentes de diseño integrados con herramientas como <b>Sketch</b> o <b>Figma</b>.</p>
+    <p>📚 En 2024 finalicé mi formación con <b>Apple Coding Academy</b> en el <b>Swift Developer Program</b> de Octubre y en 2025 el <b>Swift Mastery Program</b>, también con <b>Apple Coding Academy</b>; he de reconocer que esta última formación ha sido la más larga e importante de mi trayectoria como <b>Developer</b>.</p>
+  </div>
+
+  <!-- Proyectos -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Proyectos</b></h1>
+    <hr style="width:250px;border:5px solid red" class="w3-round">
+    <p>Te invito a que visites mi repositorio de <a href="https://github.com/SilviaCaraballo">GitHub</a>, donde podrás encontrar algunos.</p>
+    <p>Si quieres conocerme más, este es mi perfil de LinkedIn: <a href="https://www.linkedin.com/in/silvia-caraballo-fernandez-02bb99308/">Perfil profesional</a>.</p>
+    <p>También me puedes encontrar en <a href="https://x.com/FreelanceDev50">X (Twitter)</a> 😅</p>
+  </div>
+
+  <!-- Recomendaciones -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Recomendaciones.</b></h1>
+    <hr style="width:500px;border:5px solid red" class="w3-round">
+    <h3><b>¿Quieres ser Developer en Entornos Apple y no sabes por donde empezar?</b></h3>
+    <p><b>Paso 1:</b></p>
+    <p>Lo primero y lo mas importante son los fundamentos, empieza por leer la documentacion de <a href="https://www.swift.org/documentation/">Swift</a>.</p>
+    <p><b>Paso 2:</b></p>
+    <p>Necesitarás algunas herramientas para comenzar tu aventura en el mundo de la programacion de <b>Apps</b>.</p>
+    <p>Necesitarás al menos un <b>Mac</b>, no hace falta que sea un <b>MacBook</b>, ni que tenga mucha memoria, tampoco tienes que gastar mucho, un <b>Mac Mini</b> está bien para empezar, <a href="https://www.apple.com/es/shop/buy-mac/mac-mini">te recomiendo este Mac Mini</a>, 969€ la gama base. En cuanto a lo demás, tienes pantallas 4K en <a href="https://www.amazon.es">Amazon</a>, también teclados y ratones a buen precio. Una vez lo tengas, podrás instalar <a href="https://apps.apple.com/es/app/xcode/id497799835?mt=12">Xcode</a>.</p>
+    <p>Eso sí, sería obligatorio tener un <b>iPhone</b> para poder probar las Apps en un dispositivo real.</p>
+    <p><b>Paso 3:</b></p>
+    <p>Estos son algunos enlaces que te pueden ser de gran ayuda:</p>
+    <div class="w3-row-padding">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-light-grey w3-center">
+          <li class="w3-padding-16"><a href="https://acoding.academy">Apple Coding Academy</a><br><br><br><br></li>
+          <li class="w3-padding-16"><a href="https://developer.apple.com/ios/get-started/">iOS Pathway<br><br></a></li>
+          <li class="w3-padding-16"><a href="https://developer.apple.com/pathways/">Get started with Pathways<br></a></li>
+        </ul>
+      </div>
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-light-grey w3-center">
+          <li class="w3-padding-16">Academia donde hice las formaciones, con un mentor excelente: Julio Cesar Fernandez Muñoz.</li>
+          <li class="w3-padding-16">Rutas de aprendizaje de Apple.</li>
+          <li class="w3-padding-16">Recursos gratuitos para desarrolladores iOS.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contacto / Comentarios -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <section aria-labelledby="comentarios-sec">
+      <h2 id="comentarios-sec">Deja aqui tus comentarios</h2>
+      <form class="comment-form" id="commentForm" novalidate>
+        <label class="comment-label" for="commentInput">Añade tu opinión:</label>
+        <textarea
+          id="commentInput"
+          class="comment-textarea"
+          placeholder="Escribe un comentario respetuoso y constructivo..."
+          aria-required="true"
+          aria-describedby="commentInputHint commentError"
+          rows="4"
+        ></textarea>
+        <p id="commentInputHint" class="comment-hint">El comentario se mostrará como anónimo.</p>
+        <p id="commentError" class="comment-error" role="alert" aria-hidden="true">
+          El comentario no puede estar vacío.
+        </p>
+        <div class="comment-submit-container">
+          <button type="submit" class="comment-submit">Enviar Comentario</button>
+        </div>
+      </form>
+
+      <div
+        id="commentsList"
+        class="comments-list"
+        role="log"
+        aria-live="polite"
+        aria-label="Lista de comentarios"
+      >
+        <p class="no-comments" id="noComments">No hay comentarios todavía. ¡Deja tus comentarios!</p>
+      </div>
+    </section>
+  </div>
+
+</div>
+<!-- Fin del contenido principal -->
+
+<!-- Pie de página -->
+<footer class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
+  <p class="w3-right">Silvia Caraballo<br>Creado el 22 de Mayo de 2026</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
